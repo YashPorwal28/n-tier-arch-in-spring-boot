@@ -10,6 +10,10 @@ public class CustomerController {
 
     private  final CustomerService customerService ;
 
+    // CustomerService customerService , this is injected from application context
+
+
+    // @Autowired means, find bean from application context , and inject it
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
     }
